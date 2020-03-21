@@ -29,6 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
     
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 
@@ -110,7 +111,7 @@
       
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
-      <span>留言</span>
+      <span>留言版</span>
     </a>
     
   </li>
@@ -121,7 +122,7 @@
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>友情链接s</span>
+      <span>友情链接</span>
     </a>
     
   </li>
@@ -212,7 +213,7 @@
 			
 			    <i class="fa-fw fas fa-comments"></i>
 			
-			留言
+			留言版
 		</a>
           
         </li>
@@ -223,7 +224,7 @@
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			友情链接s
+			友情链接
 		</a>
           
         </li>
@@ -304,7 +305,7 @@
 
     <div class="bg-cover pd-header about-cover">
     <div class="container">
-    <div class="row">
+    <!-- <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -339,7 +340,8 @@
     $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
 
-
+ -->
+    <span id="jinrishici-sentence">正在加载今日诗词....</span>
     </div>
 </div>
 
@@ -746,6 +748,9 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+    <script type="text/javascript"> var OriginTitile = document.title, st; 
+        document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "Σ(っ °Д °;)っ喔哟，崩溃啦！", clearTimeout(st)) : (document.title = "φ(゜▽゜*)♪咦，又好了！", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) </script>
+        
 </body>
 
 </html>
